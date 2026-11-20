@@ -15,7 +15,6 @@ type Node<T> = {
   value?: T;
   next?: Node<T>;
 };
-
 export default class Queue<T> {
   public length: number;
   private head?: Node<T>;
@@ -26,21 +25,17 @@ export default class Queue<T> {
     this.head = undefined;
     this.tail = undefined;
   }
-
-  /** Add an item to the tail. */
   enqueue(item: T): void {
     const node = { value: item } as Node<T>;
     this.length++;
     if (!this.tail) {
-      this.tail = node;
       this.head = node;
+      this.tail = node;
       return;
     }
     this.tail.next = node;
     this.tail = node;
   }
-
-  /** Remove and return the item at the head. */
   dequeue(): T | undefined {
     if (!this.head) {
       return undefined;
@@ -48,11 +43,12 @@ export default class Queue<T> {
     this.length--;
     const head = this.head;
     this.head = this.head.next;
+    if (!this.head) {
+      this.tail = undefined;
+    }
     head.next = undefined;
     return head.value;
   }
-
-  /** Return the item at the front without removing it. */
   peek(): T | undefined {
     return this.head?.value;
   }
