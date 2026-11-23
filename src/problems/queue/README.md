@@ -15,8 +15,8 @@ Solve them in order. Each problem builds on the one before it.
 
 | #   | Problem                                                                                                       | Difficulty | Interview follow-up it covers                                               | Real-world link                     | Status |
 | --- | ------------------------------------------------------------------------------------------------------------- | ---------- | --------------------------------------------------------------------------- | ----------------------------------- | ------ |
-| 01  | Queue from scratch                                                                                            | Easy       | "Why not just use `array.shift()`?"                                         | Job queues                          | ⬜     |
-| 02  | [232. Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)              | Easy       | "Can every operation be amortized O(1)?"                                    | Undo/redo buffers                   | ⬜     |
+| 01  | Queue from scratch                                                                                            | Easy       | "Why not just use `array.shift()`?"                                         | Job queues                          | ✅     |
+| 02  | [232. Implement Queue using Stacks](https://leetcode.com/problems/implement-queue-using-stacks/)              | Easy       | "Can every operation be amortized O(1)?"                                    | Undo/redo buffers                   | ✅     |
 | 03  | [622. Design Circular Queue](https://leetcode.com/problems/design-circular-queue/)                            | Medium     | "What if memory is fixed and you can't allocate nodes?"                     | Audio/network ring buffers          | ⬜     |
 | 04  | [225. Implement Stack using Queues](https://leetcode.com/problems/implement-stack-using-queues/)              | Easy       | "Now do the reverse. Can you do it with one queue?"                         | n/a                                 | ⬜     |
 | 05  | [641. Design Circular Deque](https://leetcode.com/problems/design-circular-deque/)                            | Medium     | "Add and remove from both ends."                                            | Work-stealing task schedulers       | ⬜     |
@@ -29,9 +29,16 @@ Solve them in order. Each problem builds on the one before it.
 
 ## My notes
 
-Remember to fill in **after** each problem passes its tests.
+My notes **after** each problem passes its tests.
 
 ### 01 - Queue from scratch
+
+- **Approach:**
+- **Time / space:**
+- **Edge cases I hit:**
+- **Answer to the follow-up ("why not `array.shift()`?"):**
+
+### 02 - Queue from scratch
 
 - **Approach:**
 - **Time / space:**
